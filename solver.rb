@@ -7,6 +7,7 @@ class Solver
   end
 
   def reverse(str)
+    str.reverse()
   end
 
   def fizzbuzz(n)
