@@ -9,7 +9,7 @@ describe 'Solver' do
 
     it 'factorial 4 to be 24' do
       solve = Solver.new
-      expect(solve.factorial(24)).to be 24
+      expect(solve.factorial(4)).to be 24
     end
 
     it 'factorial -1 to be false' do
