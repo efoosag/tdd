@@ -1,26 +1,26 @@
 class Solver
+  def factorial(num)
+    return false if num.negative?
+    return 1 if num.zero?
 
-  def factorial(n)
-    return false if n.negative?
-    return 1 if n.zero?
-    (1..n).inject(:*)
+    (1..num).inject(:*)
   end
 
   def reverse(str)
-    str.reverse()
+    str.reverse
   end
 
-  def fizzbuzz(n) 
-    if n.zero? || n.negative?
-      'number is not a positive integer'  
-    elsif n%3 == 0 && n%5 == 0
-      "fizzbuzz"
-    elsif n%3 == 0
-      "fizz"
-    elsif n%5 == 0
-      "buzz"
+  def fizzbuzz(num)
+    if num.zero? || num.negative?
+      'number is not a positive integer'
+    elsif (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
     else
       n
+    end
   end
-end
 end

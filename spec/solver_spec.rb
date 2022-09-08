@@ -1,7 +1,7 @@
 require './solver'
 
 describe 'Solver' do
-  context 'Test Solver Class' do
+  context 'Test factorial method' do
     it 'factorial 0 to be 1' do
       solve = Solver.new
       expect(solve.factorial(0)).to be 1
@@ -16,12 +16,16 @@ describe 'Solver' do
       solve = Solver.new
       expect(solve.factorial(-1)).to be false
     end
+  end
 
+  context 'Test reverse method' do
     it 'reverse boy to be yob' do
       solve = Solver.new
       expect(solve.reverse('boy')).to eq 'yob'
     end
+  end
 
+  context 'Test fizzbuzz method' do
     it 'fizzbuzz 3 to be fizz' do
       solve = Solver.new
       expect(solve.fizzbuzz(3)).to eq 'fizz'
