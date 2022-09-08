@@ -36,5 +36,10 @@ describe 'Solver' do
       solve = Solver.new
       expect(solve.fizzbuzz(15)).to eq 'fizzbuzz'
     end
+
+    it 'number in fizzbuzz is not an integer' do
+      solve = Solver.new
+      expect(solve.fizzbuzz(-3)).to eq 'number is not a positive integer '
+    end
   end
 end
