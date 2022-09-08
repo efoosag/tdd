@@ -10,8 +10,10 @@ class Solver
     str.reverse()
   end
 
-  def fizzbuzz(n)    
-    if n%3 == 0 && n%5 == 0
+  def fizzbuzz(n) 
+    if n.zero? || n.negative?
+      'number is not a positive integer'  
+    elsif n%3 == 0 && n%5 == 0
       "fizzbuzz"
     elsif n%3 == 0
       "fizz"
